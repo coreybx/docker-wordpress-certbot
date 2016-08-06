@@ -9,12 +9,13 @@ Installation Pre-Reqs:
 * docker-compose
 
 Installation Steps:
-#Bring the hosts up (Note that the database may come up slow and it may require another restart)
-#docker-compose up -d
 
-#Auto sign the certificate for your webserver
-#docker exec -i -t $containerid certbot --apache -m $emailaddress -d $domainname -w /var/www/html/ -n --agree-to --staging
+Bring the hosts up (Note that the database may come up slow and it may require another restart)
+ docker-compose up -d
+
+Auto sign the certificate for your webserver
+ docker exec -i -t $containerid certbot --apache -m $emailaddress -d $domainname -w /var/www/html/ -n --agree-to --staging
 
 Example:
-#docker-compose up -d
-#docker exec -i -t 8e1a2ed6c08b certbot --apache -m test@test.cm -d www.test.com -w /var/www/html/ -n --agree-to --staging
+ docker-compose up -d
+ docker exec -i -t 8e1a2ed6c08b certbot --apache -m test@test.cm -d www.test.com -w /var/www/html/ -n --agree-to --staging
