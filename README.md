@@ -9,7 +9,7 @@ Installation Pre-Reqs:
 * docker-compose
 
 Installation Steps:
-#Bring the hosts up (Note that the database may come up first requiring another restart)
+#Bring the hosts up (Note that the database may come up slow and it may require another restart)
 #docker-compose up -d
 
 #Auto sign the certificate for your webserver
