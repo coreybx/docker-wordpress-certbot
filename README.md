@@ -10,10 +10,10 @@ Installation Pre-Reqs:
 
 
 Installation Steps:
-# Bring the hosts up (Note that the database may come up first requiring another restart)
+#Bring the hosts up (Note that the database may come up first requiring another restart)
 #docker-compose up -d
 
-# Auto sign the certificate for your webserver
+#Auto sign the certificate for your webserver
 #docker exec -i -t $containerid certbot --apache -m $emailaddress -d $domainname -w /var/www/html/ -n --agree-to --staging
 
 
